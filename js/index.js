@@ -32,3 +32,9 @@ setInterval( function() {
     $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
 }, 1000); 
 
+
+$('#lock').click(function(){
+    $('#locked').html('結束時間：');
+    $('#unlockedDay').toggle(1);
+    $('#place').html('任務模式')
+  });

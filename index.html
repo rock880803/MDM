@@ -21,8 +21,8 @@
             <p>國軍 MDM V6.00</p>
         </div>
         <ul class="sys-ul">
-           系統選單
-            <li class="sys-li">【上鎖】
+            系統選單
+            <li id="lock" class="sys-li">【上鎖】</a>
                 <!-- <ul class="sub-sys-ul">
                     <li class="sub-sys-li">常駐營區</li>
                     <li class="sub-sys-li">出差(WiFi)</li>
@@ -43,55 +43,108 @@
         </ul>
 
     </div>
+    <div class="scroll-box">
 
-    <div class="content enter-color">
-        <div class="locked">
-            <p>已上鎖，可進入忠愛營區</p>
+
+        <div class="content enter-color">
+            <span class="notice">
+                <p id="locked">已上鎖，可進入忠愛營區</p><input id="unlockedDay" class="unlock-day" type="text">
+            </span>
+            <div class="place">
+                <p id="place">忠愛營區</p>
+            </div>
+
+
+            <div class="clock">
+                <div id="Date"></div>
+                <ul>
+                    <li id="hours"></li>
+                    <li id="point">:</li>
+                    <li id="min"></li>
+                    <li id="point">:</li>
+                    <li id="sec"></li>
+                </ul>
+            </div>
+
+            <div class="option">
+                <ul>
+                    <li>
+                        <div class="light enter-color"></div>
+                        <div class="text">上鎖:進入管制模式</div>
+                    </li>
+                    <li>
+                        <div class="light leave-color"></div>
+                        <div class="text">解鎖:離開管制模式</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="locked-content">
+                <div class="text-cn">國軍營內民用通信<br>資訊器材管制標籤</div>
+                <div class="text-num">C228762298</div>
+            </div>
+
+            <div class="copyright">
+                <div>
+                    <span>上鎖時間：</span><span class="date"></span><span> 06:08:03</span>
+                </div>
+                <div>
+                    <span>設定檔：V6.0 (02/09 11:13:15) </span>
+                </div>
+                <div class="red-text">仿冒必究</div>
+            </div>
         </div>
-        <div class="place">
-            <p>忠愛營區</p>
-        </div>
-  
+       
+        <!-- <div id="mission-mode" class="content enter-color mission-mode">
+            <div class="locked">
+                <p>結束時間：</p>
+            </div>
+            <div class="place">
+                <p>任務模式</p>
+            </div>
 
-    <div class="clock">
-        <div id="Date"></div>
-        <ul>
-            <li id="hours"></li>
-            <li id="point">:</li>
-            <li id="min"></li>
-            <li id="point">:</li>
-            <li id="sec"></li>
-        </ul>
-    </div>
 
-    <div class="option">
-        <ul>
-            <li>
-                <div class="light enter-color"></div>
-                <div class="text">上鎖:進入管制模式</div>
-            </li>
-            <li>
-                <div class="light leave-color"></div>
-                <div class="text">解鎖:離開管制模式</div>
-            </li>
-        </ul>
-    </div>
+            <div class="clock">
+                <div id="Date"></div>
+                <ul>
+                    <li id="hours"></li>
+                    <li id="point">:</li>
+                    <li id="min"></li>
+                    <li id="point">:</li>
+                    <li id="sec"></li>
+                </ul>
+            </div>
 
-    <div class="locked-content">
-        <div class="text-cn">國軍營內民用通信<br>資訊器材管制標籤</div>
-        <div class="text-num">C228762298</div>
-    </div>
+            <div class="option">
+                <ul>
+                    <li>
+                        <div class="light enter-color"></div>
+                        <div class="text">上鎖:進入管制模式</div>
+                    </li>
+                    <li>
+                        <div class="light leave-color"></div>
+                        <div class="text">解鎖:離開管制模式</div>
+                    </li>
+                </ul>
+            </div>
 
-    <div class="copyright">
-        <div>
-            <span>上鎖時間：</span><span class="date"></span><span> 06:08:03</span>
-        </div>
-        <div>
-            <span>設定檔：V6.0 (02/09 11:13:15) </span>
-        </div>
-        <div class="red-text">仿冒必究</div>
+            <div class="locked-content">
+                <div class="text-cn">國軍營內民用通信<br>資訊器材管制標籤</div>
+                <div class="text-num">C228762298</div>
+            </div>
+
+            <div class="copyright">
+                <div>
+                    <span>上鎖時間：</span><span class="date"></span><span> 06:08:03</span>
+                </div>
+                <div>
+                    <span>設定檔：V6.0 (02/09 11:13:15) </span>
+                </div>
+                <div class="red-text">仿冒必究</div>
+            </div>
+        </div> -->
+
     </div>
-</div>
 </body>
 
 
