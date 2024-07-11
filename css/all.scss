@@ -208,6 +208,24 @@ body,
         font-size: 40px;
         font-weight: 600;
     }
+    &:active {
+        .opendoor {
+            display: flex;
+        }
+    }
+    .opendoor {
+        display: none;
+        background-color: #fff;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+       justify-content: center;
+        .qrcode {
+            width: 90%;
+
+        }
+    }
 }
 
 .copyright {

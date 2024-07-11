@@ -38,3 +38,8 @@ $('#lock').click(function(){
     $('#unlockedDay').toggle(1);
     $('#place').html('任務模式')
   });
+
+$('#mdm').click(function(){
+    $('#open').toggle(1);
+  });
+
